@@ -11,6 +11,10 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
+    <script
+      src="https://kit.fontawesome.com/1f72ff4464.js"
+      crossorigin="anonymous"
+    ></script>
     <link rel="stylesheet" href="style.css" />
     <title>Spotify-layout</title>
   </head>
@@ -21,18 +25,109 @@
           <div class="logo-spotify"></div>
           <div class="nav-menu">
             <div class="nav-top">
-              <div class="icon-home"><i class="fa-solid fa-house"></i> Home</div>
+              <div class="icon-top">
+                <a href=""><i class="fas fa-home-lg"></i> Home </a>
+              </div>
+              <div class="icon-top">
+                <a href=""> <i class="fas fa-search"></i> Cerca </a>
+              </div>
+              <div class="icon-top">
+                <a href=""> <i class="fas fa-book"></i> La tua libreria </a>
+              </div>
             </div>
-            <div class="nav-center"></div>
-            <div class="nav-bottom"></div>
+            <div class="nav-center">
+              <h3>PLAYLIST</h3>
+              <ul>
+                <li>
+                  <a href=""><i class="fas fa-plus"></i> Crea Playlist</a>
+                </li>
+                <li><a href="">Nome playlist</a></li>
+                <li><a href="">Nome playlist</a></li>
+                <li><a href="">Nome playlist</a></li>
+                <li><a href="">Nome playlist</a></li>
+                <li><a href="">Nome playlist</a></li>
+                <li><a href="">Nome playlist</a></li>
+                <li><a href="">Nome playlist</a></li>
+              </ul>
+            </div>
+            <div class="nav-bottom">
+              <div class="installa-icon">
+                <a href=""> <i class="fas fa-arrow-down"></i> Installa app</a>
+              </div>
+              <div class="profile-icon">
+                <a href="">
+                  <i class="fas fa-user-circle"></i>
+                  <span>John Doe</span>
+                </a>
+              </div>
+            </div>
           </div>
         </aside>
       </div>
       <div class="col2 flex">
-        <header></header>
-        <div class="gallery"></div>
+        <header class="flex">
+          <button class="btn-header"><a href="">EFFETTUA L'UPGRADE</a></button>
+        </header>
+        <div class="gallery">
+          <div class="nav-gallery">
+            <a href="">IN EVIDENZA</a>
+            <a href="">PODCAST</a>
+            <a href="">CLASSIFICHE</a>
+            <a href="">GENERI E MOOD</a>
+            <a href="">NUOVE USCITE</a>
+            <a href="">SCOPRI</a>
+          </div>
+
+          <h2>Recently Played</h2>
+          <div class="cover-gallery">
+            <div class="cover cover-top">
+              <img src="img/metal_lifting.jpg" alt="" />
+              <h3>Heavy Metal</h3>
+              <h5>subtitle</h5>
+            </div>
+            <div class="cover cover-top">
+              <img src="img/stranger.jpeg" alt="" />
+              <h3>
+                Stranger Things, Vol. 1 (a Netflix Original Series Soundrtack)
+              </h3>
+              <h5>Kyle Dixon & Michael Stein</h5>
+            </div>
+            <div class="cover cover-top">
+              <img src="img/aquietplace.jpeg" alt="" />
+              <h3>A quiet place</h3>
+              <h5>subtitle</h5>
+            </div>
+            <div class="cover cover-top">
+              <img src="img/split.jpeg" alt="" />
+              <h3>Split</h3>
+              <h5>subtitle</h5>
+            </div>
+            <div class="cover cover-top">
+              <img src="img/cure.jpeg" alt="" />
+              <h3>A cure for wellness</h3>
+              <h5>subtitle</h5>
+            </div>
+            <div class="cover cover-top">
+              <img src="img/sinister.jpeg" alt="" />
+              <h3>Sinister</h3>
+              <h5>subtitle</h5>
+            </div>
+          </div>
+
+          <h2>Creato per John Doe</h2>
+          <div class="cover-gallery">
+            <div class="cover cover-center">
+              <img src="img/radar.jpeg" alt="" />
+              <h3>Release Radar</h3>
+            </div>
+            <div class="cover cover-center">
+              <img src="img/radar.jpeg" alt="" />
+              <h3>Daily Mix</h3>
+            </div>
+          </div>
+        </div>
       </div>
+      <footer></footer>
     </div>
-    <footer></footer>
   </body>
 </html>

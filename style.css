@@ -2,6 +2,8 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+  font-family: sans-serif;
+  font-size: 0.9rem;
 }
 
 .flex {
@@ -11,59 +13,225 @@
 .full-container {
   width: 100%;
   height: 100%;
+  position: relative;
 }
 
 .full-container .col1 {
-  width: 20%;
-  height: 650px;
+  width: 15%;
+  /* height: 100%; */
   background-color: black;
 }
 
 aside {
-  width: 100%;
+  /* width: 100%; */
+  position: fixed;
+  height: 100%;
 }
 
 .logo-spotify {
-  width: 70%;
+  width: 100%;
+  /* position: fixed; */
   height: 100px;
   background-image: url(img/logo.svg);
   background-size: contain;
   margin: auto;
+  background-position: center;
   background-repeat: no-repeat;
 }
 
 .nav-menu {
-  width: 100%;
-  height: 550px;
-  padding: 10%;
+  /* width: 100%; */
+  height: 70%;
+  padding: 0 10px;
+  /* position: fixed; */
   display: flex;
   flex-direction: column;
+  left: 0;
 }
 
 .nav-top {
-  height: 20%;
+  height: 15%;
+  margin-bottom: 10px;
 }
-.icon-home {
+.icon-top {
   width: 100%;
   height: 33%;
   display: flex;
+  color: lightgray;
+}
+
+.icon-top a {
+  text-decoration: none;
+  color: gray;
+}
+
+.nav-center {
+  height: 74%;
+}
+
+.nav-center h3 {
   color: white;
+  font-size: 0.9rem;
+  margin-bottom: 10px;
+}
+
+.nav-center .fas {
+  background-color: lightgray;
+  font-size: 1.5rem;
+  padding: 5px;
+  color: black;
+}
+
+.nav-center li {
+  margin-bottom: 10px;
+}
+
+.nav-center li a {
+  color: gray;
+  text-decoration: none;
+}
+
+.fas {
+  color: gray;
+  font-size: 1.3rem;
+}
+
+.nav-bottom {
+  width: 100%;
+  color: gray;
+  text-decoration: none;
+  font-size: 0.4rem;
+}
+
+.nav-bottom .fa-arrow-down {
+  color: gray;
+  border: 1px solid grey;
+  border-radius: 50%;
+  font-size: 0.7rem;
+  padding: 3px;
+}
+
+.nav-bottom .installa-icon {
+  border-bottom: 2px solid gray;
+  display: flex;
+  padding-bottom: 5px;
+}
+
+.nav-bottom .fas-fa-arrow-down {
+  font-size: 0.5rem;
+}
+
+.nav-bottom .profile-icon {
+  color: white;
+  display: flex;
+  margin-top: 5px;
+}
+
+.nav-bottom span{
+    color: white;
+}
+
+.nav-bottom a{
+    text-decoration: none;
+    color: gray;
 }
 
 .full-container .col2 {
-  width: 80%;
-  height: 650px;
+  width: 85%;
+  height: 100vh;
   background-color: #141922;
+  flex-direction: column;
 }
 
 .full-container .col2 header {
-  height: 100px;
+  height: 10%;
+  position: relative;
   width: 100%;
+  justify-content: flex-end;
   background-color: #080b12;
+}
+
+header .btn-header {
+  border: 1px solid white;
+  border-radius: 50px;
+  padding: 20px;
+  margin: 10px;
+  background-color: #080b12;
+  color: white;
+  display: flex;
+  position: fixed;
+  align-items: center;
+}
+
+.btn-header a{
+    color: white;
+    text-decoration: none;
+}
+
+.col2 .gallery {
+  width: 100%;
+  padding: 0 20px;
+  /* height: 85%; */
+  height: 100vh;
+}
+
+.gallery .nav-gallery {
+  display: flex;
+  justify-content: center;
+}
+
+.nav-gallery a {
+  text-decoration: none;
+  color: gray;
+  padding: 20px;
+}
+
+.cover-gallery{
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    align-content: flex-start;
+}
+
+.cover-top{
+    width: calc(100% / 6 - 10px);
+    /* height: 150px; */
+    flex-direction: row-reverse;
+    background-size: cover;
+    margin-right: 10px;
+}
+
+.cover img{
+  width: 100%;
+  height: auto;
+}
+
+.gallery h2{
+  font-size: 1.2rem;
+  color: white;
+  margin-bottom: 20px;
+}
+
+.gallery h3{
+  color: white;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.gallery h5{
+  text-align: center;
+  color: grey;
+}
+
+.cover-center{
+  width:calc(100% / 6 - 10px);
 }
 
 footer {
   height: 95px;
+  position: fixed;
   width: 100%;
   background-color: #282828;
+  bottom: 0;
 }
