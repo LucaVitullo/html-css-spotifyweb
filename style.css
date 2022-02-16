@@ -353,14 +353,14 @@ footer .right {
 
 
 
-@media screen and (min-width:1000px) and (max-width:1499px){
-
-}
-
-@media screen and (max-height: 700px){
+@media screen and (min-width:700) and (max-width:900px){
   .cover-gallery{
     flex-wrap: wrap;
     width: calc(100% / 4);
   }
+}
+
+@media screen and (max-height: 700px){
+
 
 }
