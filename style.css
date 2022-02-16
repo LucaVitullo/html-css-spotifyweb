@@ -11,14 +11,14 @@
 }
 
 .full-container {
-  width: 100%;
+  /* width: 100%; */
   height: 100%;
   position: relative;
 }
 
 .full-container .col1 {
-  width: 15%;
-  justify-content: center;
+  width: 170px;
+  padding-left: 10px;
   height: 650px;
   background-color: black;
 }
@@ -30,7 +30,7 @@ aside {
 }
 
 .logo-spotify {
-  width: 100%;
+  width: 61%;
   /* position: fixed; */
   height: 100px;
   background-image: url(img/logo.svg);
@@ -138,7 +138,7 @@ aside {
 }
 
 .full-container .col2 {
-  width: 85%;
+  width: calc(100% - 170px);
   position: relative;
   /* height: 100vh; */
   overflow: scroll;
@@ -151,7 +151,7 @@ aside {
   position: fixed;
   top: 3px;
   right: 17px;
-  width: 85%;
+  width: calc(100% - 170px);
   justify-content: flex-end;
   background-color: #080b12;
   opacity: 0.5;
@@ -160,8 +160,8 @@ aside {
 header .btn-header {
   border: 1px solid white;
   border-radius: 50px;
-  padding: 13px;
-  margin: 5px;
+  padding: 8px;
+  margin: 15px;
   background-color: #080b12;
   color: white;
   display: flex;
@@ -186,6 +186,7 @@ header .btn-header {
   display: flex;
   justify-content: center;
   padding-top: 75px;
+  flex-wrap: wrap;
 }
 
 .nav-gallery a {
@@ -346,17 +347,37 @@ footer .right {
   border-radius: 3px;
 }
 
-.right i{
+.right i {
   margin-right: 7px;
 }
 
+@media screen and (max-width: 770px) {
+  .cover-top {
+    width: calc(100% / 4 - 10px);
+  }
+}
 
+@media screen and (max-width: 590px) {
+  * {
+    font-size: 0.8rem;
+  }
+  .cover-top {
+    width: calc(100% / 3 - 10px);
+  }
+}
 
-
-@media screen and (max-width:770px){
-  .cover-top{
-    width: calc(100% / 4);
+@media screen and (max-width: 520px) {
+  .cover-top {
+    width: calc(100% / 2 - 10px);
+  }
+  .col1 span {
+    display: none;
+  }
+  .col1 h3 {
+    display: none;
+  }
+  .logo-spotify {
+    display: none;
   }
 
 }
-
