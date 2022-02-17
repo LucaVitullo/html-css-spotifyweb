@@ -73,6 +73,7 @@ aside {
 .icon-top a {
   text-decoration: none;
   color: gray;
+  margin-bottom: 59px;
 }
 
 .nav-center {
@@ -425,7 +426,7 @@ footer {
 
 .pallino {
   position: absolute;
-  left: 98px;
+  left: 28%;
   bottom: -3px;
   width: 14px;
   height: 14px;
@@ -457,7 +458,7 @@ footer .right {
 }
 .pallino-speaker {
   position: absolute;
-  left: 28%;
+  left: 30px;
   bottom: -3px;
   width: 14px;
   height: 14px;
