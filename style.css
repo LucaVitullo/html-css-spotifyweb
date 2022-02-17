@@ -13,13 +13,13 @@
 .full-container {
   /* width: 100%; */
   height: 100%;
-  position: relative;
+  /* position: relative; */
 }
 
 .full-container .col1 {
   width: 170px;
   padding-left: 10px;
-  height: 650px;
+  /* height: 650px; */
   background-color: black;
 }
 
@@ -34,6 +34,7 @@ aside {
   /* position: fixed; */
   height: 100px;
   background-image: url(img/logo.svg);
+
   background-size: contain;
   margin: auto;
   background-position: center;
@@ -42,7 +43,7 @@ aside {
 
 .nav-menu {
   /* width: calc(100% - 95px); */
-  height: 83%;
+  height: 81%;
   padding-left: 10px;
   /* position: fixed; */
   display: flex;
@@ -67,7 +68,7 @@ aside {
 }
 
 .nav-center {
-  height: 74%;
+  height: 72%;
 }
 
 .nav-center h3 {
@@ -104,16 +105,12 @@ aside {
   font-size: 0.4rem;
 }
 
-.nav-bottom .fa-arrow-down {
-  color: gray;
-  border: 1px solid grey;
-  border-radius: 50%;
-  font-size: 0.7rem;
-  padding: 3px;
+.nav-bottom .far{
+  width: 20px;
+  font-size: 1.1rem;
 }
 
 .nav-bottom .installa-icon {
-  border-bottom: 2px solid gray;
   display: flex;
   padding-bottom: 5px;
 }
@@ -126,6 +123,11 @@ aside {
   color: white;
   display: flex;
   margin-top: 5px;
+}
+
+.nav-bottom .line {
+  border: 1px solid grey;
+  width: 80px;
 }
 
 .nav-bottom span {
@@ -377,7 +379,37 @@ footer .right {
     display: none;
   }
   .logo-spotify {
+    
+    background: url(img/logo-small.svg);
+    background-repeat: no-repeat;
+    height: 35px;
+  }
+  .full-container .col2 header{
+    width: 87%;
+  }
+
+  .nav-center a {
     display: none;
   }
 
+  .nav-bottom .line {
+    display: none;
+  }
+.nav-bottom .installa-icon{
+}
+
+  .nav-menu {
+    height: 95%;
+  }
+
+  .col2 {
+    width: 90%;
+  }
+
+  .full-container .col1 {
+    width: 10%;
+  }
+  .full-container .col2 {
+    width: 90%;
+  }
 }
