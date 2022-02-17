@@ -52,7 +52,7 @@ aside {
 }
 
 .nav-top {
-  height: 15%;
+  height: 14%;
   margin-bottom: 10px;
 }
 .icon-top {
@@ -67,9 +67,7 @@ aside {
   color: gray;
 }
 
-.nav-center {
-  height: 72%;
-}
+.nav-center {height: 217px;flex-grow: 1;}
 
 .nav-center h3 {
   color: white;
@@ -82,6 +80,7 @@ aside {
   font-size: 1.5rem;
   padding: 5px;
   color: black;
+  border-radius: 3px;
 }
 
 .nav-center li {
@@ -99,15 +98,16 @@ aside {
 }
 
 .nav-bottom {
-  width: 100%;
+  /* width: 100%; */
   color: gray;
   text-decoration: none;
   font-size: 0.4rem;
+  height: -21px;
 }
 
 .nav-bottom .far{
   width: 20px;
-  font-size: 1.1rem;
+  font-size: 1.3rem;
 }
 
 .nav-bottom .installa-icon {
@@ -128,6 +128,7 @@ aside {
 .nav-bottom .line {
   border: 1px solid grey;
   width: 80px;
+  background-color: gray;
 }
 
 .nav-bottom span {
@@ -399,7 +400,7 @@ footer .right {
 }
 
   .nav-menu {
-    height: 95%;
+    height: 90%;
   }
 
   .col2 {
@@ -411,5 +412,11 @@ footer .right {
   }
   .full-container .col2 {
     width: 90%;
+  }
+}
+
+@media screen and (max-height:490px){
+  .nav-center{
+    overflow-y: scroll;
   }
 }
