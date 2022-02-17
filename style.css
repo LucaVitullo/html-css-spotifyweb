@@ -67,7 +67,10 @@ aside {
   color: gray;
 }
 
-.nav-center {height: 217px;flex-grow: 1;}
+.nav-center {
+  height: 217px;
+  flex-grow: 1;
+}
 
 .nav-center h3 {
   color: white;
@@ -105,7 +108,7 @@ aside {
   height: -21px;
 }
 
-.nav-bottom .far{
+.nav-bottom .far {
   width: 20px;
   font-size: 1.3rem;
 }
@@ -152,12 +155,12 @@ aside {
 .full-container .col2 header {
   height: 10%;
   position: fixed;
-  top: 3px;
+  top: 0;
   right: 17px;
-  width: calc(100% - 170px);
+  width: calc(100% - 187px);
   justify-content: flex-end;
-  background-color: #080b12;
-  opacity: 0.5;
+  background-color: rgba(0,0,0,0.5);
+  /* opacity: 0.5; */
 }
 
 header .btn-header {
@@ -165,7 +168,7 @@ header .btn-header {
   border-radius: 50px;
   padding: 8px;
   margin: 15px;
-  background-color: #080b12;
+  background-color: rgba(0,0,0,0.5);
   color: white;
   display: flex;
   /* position: fixed; */
@@ -380,12 +383,11 @@ footer .right {
     display: none;
   }
   .logo-spotify {
-    
     background: url(img/logo-small.svg);
     background-repeat: no-repeat;
     height: 35px;
   }
-  .full-container .col2 header{
+  .full-container .col2 header {
     width: 87%;
   }
 
@@ -396,8 +398,6 @@ footer .right {
   .nav-bottom .line {
     display: none;
   }
-.nav-bottom .installa-icon{
-}
 
   .nav-menu {
     height: 90%;
@@ -415,8 +415,8 @@ footer .right {
   }
 }
 
-@media screen and (max-height:490px){
-  .nav-center{
+@media screen and (max-height: 490px) {
+  .nav-center {
     overflow-y: scroll;
   }
 }
