@@ -62,6 +62,13 @@ aside {
   color: lightgray;
 }
 
+.line-green-home {
+  border: 1px solid green;
+  background-color: green;
+  position: absolute;
+  left: 0;
+  height: 20px;
+}
 
 .icon-top a {
   text-decoration: none;
@@ -94,6 +101,10 @@ aside {
 .nav-center li a {
   color: gray;
   text-decoration: none;
+}
+
+.nav-center li a:hover {
+  color: white;
 }
 
 .fas {
@@ -154,8 +165,9 @@ aside {
 }
 
 .full-container .col2 header {
-  height: 10%;
+  height: 90px;
   position: fixed;
+  z-index: 2;
   top: 0;
   right: 17px;
   width: calc(100% - 187px);
@@ -180,6 +192,9 @@ header .btn-header {
   color: white;
   text-decoration: none;
 }
+.btn-header:hover {
+  transform: scale(1.1);
+}
 
 .col2 .gallery {
   width: 100%;
@@ -187,6 +202,12 @@ header .btn-header {
   /* height: 85%; */
   height: calc(100vh - 95px);
   /* overflow-y: scroll; */
+}
+.line-green {
+  width: 53%;
+  background-color: green;
+  border-bottom: 2px solid green;
+  margin-left: 25px;
 }
 
 .gallery .nav-gallery {
@@ -196,8 +217,8 @@ header .btn-header {
   flex-wrap: wrap;
 }
 
-.nav-gallery a:nth-child(1){
-  border-bottom: 2px solid green;
+.nav-gallery a:nth-child(1) {
+  /* border-bottom: 2px solid green; */
 }
 
 .nav-gallery a {
@@ -225,7 +246,7 @@ header .btn-header {
 
 .cover img {
   /* height: auto; */
-  width: calc(100% / 1);
+  width: 100%;
 }
 
 .gallery h2 {
@@ -259,7 +280,46 @@ header .btn-header {
 .cover-bottom img {
   border-radius: 50%;
 }
+.pos-rel {
+  position: relative;
+}
 
+.image {
+  opacity: 1;
+  display: block;
+  width: 100%;
+  height: auto;
+  transition: 0.5s ease;
+  backface-visibility: hidden;
+}
+
+.middle {
+  transition: 0.5s ease;
+  opacity: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.pos-rel:hover .image {
+  opacity: 0.3;
+}
+
+.pos-rel:hover .middle {
+  opacity: 1;
+}
+
+.text {
+  color: white;
+  font-size: 30px;
+}
+
+.text i{
+  font-size: 30px;
+}
 /*------footer-------*/
 
 footer {
@@ -300,6 +360,11 @@ footer {
 .text-song h6 {
   color: white;
 }
+
+.text-song a {
+  text-decoration: none;
+  color: gray;
+}
 .text-song span {
   color: gray;
 }
@@ -310,7 +375,12 @@ footer {
   justify-content: space-evenly;
   color: gray;
 }
-
+.buttons-song i:hover {
+  color: white;
+}
+.buttons-player i:hover {
+  color: white;
+}
 .buttons-song i {
   font-size: 1.1rem;
 }
@@ -333,17 +403,44 @@ footer {
   margin: 0 5px;
 }
 
+.buttons-player .fa-play-circle:hover{
+  transform: scale(1.2);
+  
+}
+
 .time-line {
   width: 90%;
-  border: 1px solid gray;
+  /* border: 2px solid gray; */
   background-color: gray;
   border-radius: 3px;
+  position: relative;
 }
 
 .white-line {
   width: 30%;
-  border: 1px solid white;
+  border: 3px solid white;
   background-color: white;
+  border-radius: 2px;
+}
+
+.pallino {
+  position: absolute;
+  left: 98px;
+  bottom: -3px;
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+  background-color: gray;
+  visibility: hidden;
+}
+
+.time-line:hover .pallino {
+  visibility: visible;
+}
+
+.white-line:hover {
+  background-color: lightgreen;
+  border: 3px solid lightgreen;
 }
 
 footer .right {
@@ -353,9 +450,24 @@ footer .right {
 }
 .speaker-line {
   width: 30%;
-  border: 1px solid gray;
+  /* border: 1px solid gray; */
   background-color: gray;
   border-radius: 3px;
+  position: relative;
+}
+.pallino-speaker {
+  position: absolute;
+  left: 30px;
+  bottom: -3px;
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+  background-color: gray;
+  visibility: hidden;
+}
+
+.speaker-line:hover .pallino-speaker {
+  visibility: visible;
 }
 
 .right i {
@@ -424,4 +536,8 @@ footer .right {
   .nav-center {
     overflow-y: scroll;
   }
+}
+
+a:hover {
+  color: white;
 }
