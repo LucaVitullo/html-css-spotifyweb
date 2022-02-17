@@ -318,7 +318,7 @@ header .btn-header {
 }
 
 .text i{
-  font-size: 30px;
+  font-size: 50px;
 }
 /*------footer-------*/
 
@@ -430,7 +430,7 @@ footer {
   width: 14px;
   height: 14px;
   border-radius: 50%;
-  background-color: gray;
+  background-color: white;
   visibility: hidden;
 }
 
@@ -457,12 +457,12 @@ footer .right {
 }
 .pallino-speaker {
   position: absolute;
-  left: 30px;
+  left: 28%;
   bottom: -3px;
   width: 14px;
   height: 14px;
   border-radius: 50%;
-  background-color: gray;
+  background-color: white;
   visibility: hidden;
 }
 
